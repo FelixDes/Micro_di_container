@@ -1,5 +1,6 @@
 package org.di;
 
+import org.di.annotations.Component;
 import org.di.annotations.Singleton;
 
 import java.util.Map;
@@ -17,16 +18,13 @@ public class ApplicationContext {
         this.config = config;
     }
 
-    public <T> T getObject(Class<T> type) {
+    public <T> T getComponent(Class<T> type) {
         if (cache.containsKey(type)) {
             return (T) cache.get(type);
         }
 
-        Class<? extends T> implClass = type;
+        Class<? extends T> implClass = config.getImplComponent(type).iterator().next();
 
-        if (type.isInterface()) {
-            implClass = config.getImplClass(type);
-        }
         T t = factory.createObject(implClass);
 
         if (implClass.isAnnotationPresent(Singleton.class)) {

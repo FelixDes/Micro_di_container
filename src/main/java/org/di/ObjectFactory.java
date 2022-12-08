@@ -1,6 +1,7 @@
 package org.di;
 
 import org.di.annotations.PostConstruct;
+import org.di.configurators.ObjectConfigurator;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -13,7 +14,8 @@ public class ObjectFactory {
 
     public ObjectFactory(ApplicationContext context) {
         this.context = context;
-        for (Class<? extends ObjectConfigurator> configurator : context.getConfig().getScanner().getSubTypesOf(ObjectConfigurator.class)) {
+        var a = context.getConfig().getScanner().getSubTypesOf(ObjectConfigurator.class);
+        for (Class<? extends ObjectConfigurator> configurator : a) {
             try {
                 configurators.add(configurator.getDeclaredConstructor().newInstance());
             } catch (InstantiationException

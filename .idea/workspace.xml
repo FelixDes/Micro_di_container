@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4a6e8f1-d681-4437-8f6b-5f2de2fc2b09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b4a6e8f1-d681-4437-8f6b-5f2de2fc2b09" name="Changes" comment="Initial">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/di/annotations/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/di/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/di/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/di/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/di/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/di/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/di/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/di/InjectByTypeAnnotationObjectConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/di/configurators/InjectByTypeAnnotationObjectConfigurator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/di/JavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/di/JavaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/di/ObjectConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/di/configurators/ObjectConfigurator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/di/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/di/ObjectFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +24,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -62,7 +71,7 @@
       <module name="Micro_di_container" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.di.*" />
+          <option name="PATTERN" value="org.di.configurators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -85,8 +95,22 @@
       <option name="presentableId" value="Default" />
       <updated>1669311502117</updated>
       <workItem from="1669311504454" duration="2529000" />
-      <workItem from="1669314048843" duration="3432000" />
+      <workItem from="1669314048843" duration="5018000" />
+      <workItem from="1669372951207" duration="5343000" />
+      <workItem from="1669384559947" duration="4288000" />
+      <workItem from="1669389307234" duration="8450000" />
+      <workItem from="1669478778977" duration="606000" />
+      <workItem from="1669487548427" duration="1402000" />
+      <workItem from="1670443348260" duration="6000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1669317545238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669317545238</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,10 +121,33 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.di.ApplicationContext" memberName="factory" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

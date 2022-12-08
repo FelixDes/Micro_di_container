@@ -2,8 +2,10 @@ package org.di;
 
 import org.reflections.Reflections;
 
+import java.util.List;
+
 public interface Config {
-    <T> Class<? extends T> getImplClass(Class<T> ifc);
+    <T> List<Class<? extends T>> getImplComponent(Class<T> ifc);
 
     Reflections getScanner();
 }

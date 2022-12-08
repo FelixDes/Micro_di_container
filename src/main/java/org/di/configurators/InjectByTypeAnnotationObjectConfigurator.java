@@ -1,5 +1,6 @@
-package org.di;
+package org.di.configurators;
 
+import org.di.ApplicationContext;
 import org.di.annotations.Inject;
 
 import java.lang.reflect.Field;
@@ -10,7 +11,7 @@ public class InjectByTypeAnnotationObjectConfigurator implements ObjectConfigura
         for (Field field : t.getClass().getDeclaredFields()) {
             if (field.isAnnotationPresent(Inject.class)) {
                 field.setAccessible(true);
-                Object object = context.getObject(field.getType());
+                Object object = context.getComponent(field.getType());
                 try {
                     field.set(t, object);
                 } catch (IllegalAccessException e) {
